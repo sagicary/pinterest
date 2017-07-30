@@ -1,3 +1,28 @@
 #buscar{
-	width: 350%;
+	width: 400%;
+}
+.modal-header{
+	border: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	.headermodal{
+		i{
+			color: $coloriconos;
+			font-size: 20px;
+			padding-right: 20px;
+			font-weight: normal;
+		}
+		.btn-primary{
+			i{
+				color: $blanco;
+				padding-right: 5px;
+			}
+			background-color: $colorboton;
+			border: none;
+			margin-left: 350px;
+		}
+	}
+}
+.modal-title{
+	font-weight: bold;
 }
