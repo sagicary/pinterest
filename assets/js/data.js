@@ -11,11 +11,14 @@ datos.forEach(function(el){
 		el.image_url+'"><h4>'+el.title+'</h4><h5>'+el.description+'</h5><p>'+el.username+' #'+
 		el.hashtag+'</p></div><div class="modal fade" id="myModal'+el.id+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
 			'<div class="modal-dialog" role="document"><div class="modal-content">'+
-		    '<div class="modal-header"><div class="headermodal"><i class="fa fa-upload" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><i class="fa fa-ellipsis-h" aria-hidden="true"></i><button type="button" class="btn btn-primary"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
+		    '<div class="modal-header"><div class="headermodal"><i class="fa fa-upload" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true">'+
+		    '</i><i class="fa fa-ellipsis-h" aria-hidden="true"></i><button type="button" class="btn btn-primary"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
 		    '<h4 class="modal-title" id="myModalLabel'+el.id+'">'+el.title+'</h4></div>'+
-			'<div class="modal-body"><img class="img-responsive img-rounded" src="dist/img/'+el.image_url+'"></div><div class="modal-footer">'+
-			'<button type="button" class="btn btn-primary">Save changes</button><h5>'+el.username+' #'+el.hashtag+
-			'<button type="button" class="btn btn-default" data-dismiss="modal">Close</button></h5><h4 class="text-left">'+el.description+
+			'<div class="modal-body"><img class="img-responsive img-rounded center-block" src="dist/img/'+el.image_url+'"></div><div class="modal-footer">'+
+			'<div class="headermodal"><i class="fa fa-upload" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i>'+
+			'<i class="fa fa-ellipsis-h" aria-hidden="true"></i><button type="button" class="btn btn-primary"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
+			'<div class="text-left segundo"><h5><i class="fa fa-user-circle" aria-hidden="true"></i>'+el.username+' #'+el.hashtag+
+			'<button type="button" class="btn btn-default" data-dismiss="modal">Leerlo</button></h5></div><h4 class="text-justify">'+el.description+
 			'</h4></div></div></div></div>');
 
 });
