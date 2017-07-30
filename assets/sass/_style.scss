@@ -1,6 +1,40 @@
 #buscar{
 	width: 400%;
 }
+.navbar-default .navbar-brand {
+	color: #B5B5B5;
+}
+.navbar-default{
+	background-color: $blanco;
+	color: $colorletras;
+}
+.dropdown-toggle{
+	font-weight: bold;	
+}
+.navbar-brand{
+	color: $colorletras;
+	font-size: 16px;
+	font-weight: bold;
+	i{
+		color: $pinterest;
+		font-size: 20px;
+		padding-right: 10px;
+	}
+}
+.navbar-right{
+	li{
+		a{
+			color: $colorletras;
+			font-size: 12px;
+			font-weight: bold;
+			i{
+				color: $coloriconos;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
 .modal-header{
 	border: none;
 	margin-bottom: 0px;
