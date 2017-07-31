@@ -161,3 +161,14 @@
 	-o-transition: all .2s ease;
 	transition: all .2s ease;
 }
+
+@for $i from 1 through 11{
+	.item#{$i}{
+		background-image: url('../img/#{$i}.jpg'); 
+		padding: 5px;
+		-webkit-text-fill-color: $blanco;
+  		-webkit-text-stroke-color: $negro;
+  		-webkit-text-stroke-width: 0.5px;  
+		font-weight: bold;
+	}
+}
