@@ -103,3 +103,61 @@
 	height: 50px;
 	border-radius: 50%;
 }
+
+/*Para tipo pinterest*/
+#mostrar {
+	width: 90%;
+	max-width: 1100px;
+	min-width: 800px;
+	margin: 50px auto;
+}
+
+#columnas {
+	-webkit-column-count: 5;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 5;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-count: 5;
+	column-gap: 15px;
+	column-fill: auto;
+}
+
+.pin {
+	h4{
+		font-weight: bold;
+		padding-top: 5px;
+	}
+	.contder{
+		padding-left: 2px;
+		color: $coloriconos;
+		font-size: 10px;
+		position: absolute; 
+		right: 15px;
+		margin-bottom: 5px;
+		i{
+			color: $coloriconos;
+			font-size: 10px;
+			padding-right: 1px;
+		}
+	}
+	p{
+		i{
+			color: #coloriconos;
+			font-size: 20px;
+			padding-right: 2px;
+		}
+	}
+	display: inline-block;
+	margin: 0 2px 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	padding: 15px;
+	padding-bottom: 5px;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}

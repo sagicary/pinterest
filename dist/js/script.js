@@ -12642,9 +12642,10 @@ $(document).ready(function(){
 		console.log("entro");
 		console.log (datos[x].title);
 		console.log (datos[x].image_url);
-		$('#mostrar').append('<div class="col-md-2" type="button" data-toggle="modal" data-target="#myModal'+datos[x].id+'"><img class="img-responsive img-rounded" src="dist/img/'+
-			datos[x].image_url+'"><h4>'+datos[x].title+'</h4><h5>'+datos[x].description+'</h5><p>'+datos[x].username+' #'+
-			datos[x].hashtag+'</p></div><div class="modal fade" id="myModal'+datos[x].id+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
+		$('#columnas').append('<div class="pin col-md-12" type="button" data-toggle="modal" data-target="#myModal'+datos[x].id+'"><img class="img-responsive img-rounded" src="dist/img/'+
+			datos[x].image_url+'"><p class="contder"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6k <i class="fa fa-check" aria-hidden="true"></i> 6</p><h4>'+datos[x].title+'</h4><h5>'+datos[x].description+'</h5><p><i class="fa fa-user-circle" aria-hidden="true"></i>'+datos[x].username+' #'+
+			datos[x].hashtag+'</p></div>'+
+				'<div class="modal fade" id="myModal'+datos[x].id+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
 				'<div class="modal-dialog" role="document"><div class="modal-content">'+
 			    '<div class="modal-header"><div class="headermodal"><i class="fa fa-upload" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true">'+
 			    '</i><i class="fa fa-ellipsis-h" aria-hidden="true"></i><button type="button" class="btn btn-primary"><i class="fa fa-thumb-tack" aria-hidden="true"></i>Guardar</button></div>'+
@@ -12673,8 +12674,8 @@ $(document).ready(function(){
 	//console.log(el.image_url);
 	//if(el>20){
 	for (var x=20; x<40; x++){
-		$('#mostrar').append('<div class="col-md-2" type="button" data-toggle="modal" data-target="#myModal'+datos[x].id+'"><img class="img-responsive img-rounded" src="dist/img/'+
-		datos[x].image_url+'"><h4>'+datos[x].title+'</h4><h5>'+datos[x].description+'</h5><p>'+datos[x].username+' #'+
+		$('#columnas').append('<div class="pin col-md-12" type="button" data-toggle="modal" data-target="#myModal'+datos[x].id+'"><img class="img-responsive img-rounded" src="dist/img/'+
+		datos[x].image_url+'"><p class="contder"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6k <i class="fa fa-check" aria-hidden="true"></i> 6</p><h4>'+datos[x].title+'</h4><h5>'+datos[x].description+'</h5><p><i class="fa fa-user-circle" aria-hidden="true"></i>'+datos[x].username+' #'+
 		datos[x].hashtag+'</p></div><div class="modal fade" id="myModal'+datos[x].id+'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">'+
 			'<div class="modal-dialog" role="document"><div class="modal-content">'+
 		    '<div class="modal-header"><div class="headermodal"><i class="fa fa-upload" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true">'+
